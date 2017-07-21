@@ -27,25 +27,36 @@ connection.connect(function(err) {
 		})	
 }); 
 
-function start() {
 
+function start() {
 	inquirer
-		.prompt({
+	  .prompt([
+	    {
 		  name: "selectProductId",
 		  type: "input",
-		  message: "Congrats on your bundle of joy! Specify the id of the product you'd like to buy!",
+		  message: "\n Congrats on your bundle of joy! Specify the id of the product you want to buy!",
 		  validate: function(answer) {
 		  	if (!isNaN(answer) && answer <= 10) {
+				return true
+		  	} else { 
+		  		return false
+		  	}
+		  }	
+	    },
+		{
+		  name: "numberOfUnits",
+		  type: "input",
+		  message: "How many units would you like?",
+		  validate: function(answer) {
+		  	if (!isNaN(answer)) {
 		  		return true;
 		  	} else {
 		  		return false;
 		  	}
+		  }
+		}
+	])
+	  
 
-		  }	
-		});
 }
-
-
-
-// connection.end();
 
