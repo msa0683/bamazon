@@ -22,7 +22,7 @@ INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("Baby Jogger City Select Double Stroller", "Car Seats & Strollers", 500, 70);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Peg Perego Primo Viaggio Car Seat - Licorice", "Car Seats & Strollers", 400, 100);
+VALUES ("Peg Perego Primo Viaggio Car Seat", "Car Seats & Strollers", 400, 100);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("Mommy Hook", "Baby Essentials", 8, 100);

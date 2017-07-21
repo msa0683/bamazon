@@ -17,7 +17,16 @@ connection.connect(function(err) {
 		console.log("Connected as id " + connection.threadId);
 		connection.query("SELECT * FROM products", function(err,data){
 			if (err) throw err;
-				console.log(data);					
+			else {
+				for (var i = 0; i < data.length; i++) {
+					console.log(data[i].id + "|",  
+								data[i].product_name + " |",
+								data[i].department_name + " |",
+								data[i].price + " |", 
+								data[i].stock_quantity + "|");
+
+				}
+			}
 		})	
 	}
 }); 
