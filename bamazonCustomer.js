@@ -13,20 +13,39 @@ var connection = mysql.createConnection({
 
 connection.connect(function(err) {
 	if (err) throw err;
-	else {
 		console.log("Connected as id " + connection.threadId);
 		connection.query("SELECT * FROM products", function(err,data){
 			if (err) throw err;
-			else {
-				for (var i = 0; i < data.length; i++) {
-					console.log(data[i].id + "|",  
-								data[i].product_name + " |",
-								data[i].department_name + " |",
-								data[i].price + " |", 
-								data[i].stock_quantity + "|");
-
-				}
+			for (var i = 0; i < data.length; i++) {
+				console.log(data[i].id + "|",  
+							data[i].product_name + " |",
+							data[i].department_name + " |",
+							data[i].price + " |", 
+							data[i].stock_quantity + "|");
 			}
+			start();
 		})	
-	}
 }); 
+
+function start() {
+
+	inquirer
+		.prompt({
+		  name: "selectProductId",
+		  type: "input",
+		  message: "Congrats on your bundle of joy! Specify the id of the product you'd like to buy!",
+		  validate: function(answer) {
+		  	if (!isNaN(answer) && answer <= 10) {
+		  		return true;
+		  	} else {
+		  		return false;
+		  	}
+
+		  }	
+		});
+}
+
+
+
+// connection.end();
+
