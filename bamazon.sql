@@ -41,3 +41,5 @@ VALUES ("4moms breeze Playard", "Nursery", 300, 50);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("Aden and Anais Swaddle Blankets", "Nursery", 30, 100);
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
