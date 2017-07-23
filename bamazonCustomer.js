@@ -85,8 +85,11 @@ function pickProduct() {
 	  			})  
 	  		} else {
 
-	  			console.log("I am sorry, we don't have "  + answer.numberOfUnits + " of the " + itemChosen.product_name 
-	  									+ " available! We only have " + itemChosen.stock_quantity  + " in stock! Order aborted!");
+	  			console.log("\nI am sorry, we don't have "  + answer.numberOfUnits + " of the " + itemChosen.product_name 
+	  									+ " available! We only have " + itemChosen.stock_quantity  + " in stock! Start Over!");
+	  			console.log("\n=======================================================================================");
+	  			console.log("=======================================================================================\n");
+	  			displayData();
 	  		}
 
 
