@@ -1,5 +1,5 @@
 # bamazon
-<h2> Description
+<h2> Description </h2>
 
 This application implements a command line based storefront using the npm inquirer package and the MySQL database backend along with the npm mysql package. 
 
