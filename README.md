@@ -3,17 +3,17 @@
 
 This application implements a command line based storefront using the npm inquirer package and the MySQL database backend along with the npm mysql package. 
 
-## <h3> 1. When the app is run, our displayData() function is run, where we also run our pickProduct() function. </h3> 
-## <strong> This is what that looks like: </strong>
+<h4> 1. When the app is run, our displayData() function is run, where we also run our pickProduct() function. </h3> 
+
+
 <img width="888" alt="instock1" src="https://user-images.githubusercontent.com/28279675/28496455-ba01a9f4-6f20-11e7-9abb-0147c8d61dec.png">
 
-## <h3> 2. The user picks the product they want to buy from a list of numbers (1-10) which corresponds to the id of the product in the mysql database. More numbers are revealed, as we scroll down until we reach number 10. </h3> 
-## <strong> This is what that looks like: </strong>
+## <h4> 2. The user picks the product they want to buy from a list of numbers (1-10) which corresponds to the id of the product in the mysql database. More numbers are revealed, as we scroll down until we reach number 10. </h4> 
 
 <img width="889" alt="instock2" src="https://user-images.githubusercontent.com/28279675/28496496-ef5952e0-6f21-11e7-9ed6-d9090ca24c76.png">
 
 ## <h3>3. Next the user is prompted to enter the quantity of the product</h3>
-## <strong> This is what that looks like: </strong>
+
 <img width="895" alt="instock3" src="https://user-images.githubusercontent.com/28279675/28496517-479be6d4-6f22-11e7-8122-63d4e41668e2.png">
 
 ## <h3>4. The user inputs a quantity of 5 in this case </h3>
