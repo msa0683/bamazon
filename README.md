@@ -1,4 +1,8 @@
 # bamazon
+<h2> Description
+
+This application implements a command line based storefront using the npm inquirer package and the MySQL database backend along with the npm mysql package. 
+
 ## <h3> 1. When the app is run, our displayData() function is run, where we also run our pickProduct() function. </h3> 
 ## <strong> This is what that looks like: </strong>
 <img width="888" alt="instock1" src="https://user-images.githubusercontent.com/28279675/28496455-ba01a9f4-6f20-11e7-9abb-0147c8d61dec.png">
